@@ -1,7 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 
 set -e
 
+tags=()
 export commit=$GITHUB_SHA
 export branch=${GITHUB_REF##*/}
 

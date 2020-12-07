@@ -1,6 +1,6 @@
 FROM docker:latest
 
-RUN apk -Uuv add python3 py3-pip && \
+RUN apk -Uuv add python3 py3-pip bash && \
     python3 -m pip install awscli && \
 	apk --purge -v del py-pip && \
 	rm /var/cache/apk/* && \
